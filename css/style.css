@@ -9,17 +9,62 @@ html {
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
     background-color: #333;
 }
 
-button{
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+button {
     padding: .5em 1em;
     font-size: 2.2rem;
-    background: transparent;
+    background: none;
     box-shadow: 0 0 6px 5px teal;
-    color: teal;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color .3s, box-shadow .3s;
+    color: rgb(16, 129, 129);
+}
+
+button:hover {
+    color: rgb(16, 129, 129);
+    box-shadow: 0 0 3px 3px rgb(21, 168, 168);
+}
+
+.fas {
+    transition: transform .6s;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    transition: .6s;
+}
+
+.item1 {
+    height: 40px;
+    background-image: url('../img/tree-736885_1280.jpg');
+}
+
+.item2 {
+    height: 300px;
+    background-image: url('../img/tree-5255288_1280.jpg');
+    background-position: center;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.hide {
+    height: 300px;
 }
